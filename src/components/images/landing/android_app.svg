@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.572 37.529">
+  <defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        opacity: 0.6;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 11px;
+        font-family: Barlow-Bold, Barlow;
+        font-weight: 700;
+        letter-spacing: 0.018em;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_23938" data-name="Group 23938" transform="translate(-25.295 -566.31)">
+    <g id="Rectangle_8908" data-name="Rectangle 8908" class="cls-1" transform="translate(25.295 566.31)">
+      <rect class="cls-5" width="140.572" height="37.529" rx="1"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="139.572" height="36.529" rx="0.5"/>
+    </g>
+    <text id="ANDROID_APP" data-name="ANDROID APP" class="cls-2" transform="translate(68.39 589.1)"><tspan x="0" y="0">ANDROID APP</tspan></text>
+    <g id="Group_23849" data-name="Group 23849" class="cls-3" transform="translate(48.125 577.185)">
+      <path id="Path_4052" data-name="Path 4052" class="cls-4" d="M.336,1020.339h0a.322.322,0,0,0-.336.346v15.938a.322.322,0,0,0,.336.346.242.242,0,0,0,.2-.069l1.275-.832a.066.066,0,0,0,.067-.069l11.41-7.138a.4.4,0,0,0,.134-.485c0-.069-.067-.069-.134-.139L1.946,1021.1h0l-.067-.069L.6,1020.2C.47,1020.339.4,1020.339.336,1020.339Zm.336.9.805.485,5.5,6.86-5.437,6.86L.671,1036Zm2.551,1.594,5.571,3.465-1.41,1.732Zm6.108,3.881,3.087,1.94-3.087,1.94-1.544-1.94Zm-1.946,2.495,1.41,1.732-5.571,3.465Z" transform="translate(0 -1020.2)"/>
+    </g>
+  </g>
+</svg>
