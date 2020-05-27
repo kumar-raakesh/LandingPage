@@ -5,7 +5,15 @@ import Slider from "react-slick";
 import "../css/style.css";
 import img from "../images/landing/header/leaguex_logo.png";
 import mobile from "../images/landing/banner/leaguex_mobile.png";
-
+import Images from "../images/landing/highlights/instant_withdraw.png";
+import Mobile1 from "../images/landing/downloadapp/matches_mobile.png";
+import Mobile2 from "../images/landing/downloadapp/leagues-mobile.png";
+import greenPath from "../images/landing/downloadapp/green_path.png";
+import cashfree from "../images/landing/footer/cashfree.png";
+import facebook from "../images/landing/footer/facebook.png";
+import youtube from "../images/landing/footer/youtube.png";
+import twitter from "../images/landing/footer/twitter.png";
+import instagram from "../images/landing/footer/instagram.png";
 
 export default class LandingComponent extends Component {
   constructor(props) {
@@ -179,7 +187,7 @@ export default class LandingComponent extends Component {
           </div>
           <section className="banner">
             <div className="container2">
-              <div className="banner_info ">
+              <div className="banner_info d-flex">
                 <div className="banner_content">
                   <h1>
                     Play the Ultimate <span>Fantasy Sports</span>
@@ -212,6 +220,7 @@ export default class LandingComponent extends Component {
                 <div className="banner_mobile">
                   <img
                     src={mobile}
+                    className="banner_mobile_img"
                   />
 
                 </div>
@@ -220,26 +229,7 @@ export default class LandingComponent extends Component {
 
           </section>
 
-          {/* <div class="box effect1">
-            <div className="card_header">
-              <p >
-                07:00 AM, 22 March
-              </p>
-              <div className="match_date">
-                <span style={{ fontFamily: "barlow_bold" }}>
-                  IND
-              </span>
-                <span>
-                  VS
-                </span>
-                <span>
-                  PAK
-                </span>
 
-              </div>
-              <p style={{ marginTop: 2 }}>ODI</p>
-            </div>
-          </div> */}
 
 
           <section className="upcoming-matches">
@@ -248,9 +238,9 @@ export default class LandingComponent extends Component {
                 <div className="popular_matches_bar" />
                 <h3>Popular Matches</h3>
               </div>
-              <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+              <div className="match_card">
                 {card && card.map((item, index) => (
-                  <div class="box effect1" key={index} style={{ marginLeft: 12 }}>
+                  <div class="card effect1" key={index} style={{ marginLeft: 12 }}>
                     <div className="card_header">
                       <p >
                         07:00 AM, 22 March
@@ -276,9 +266,403 @@ export default class LandingComponent extends Component {
 
             </div>
           </section>
+
+
+          <section className="easy-play">
+            <div className="container2">
+              <div className="section-title">
+                <h3 >Easy to play</h3>
+              </div>
+            </div>
+
+          </section>
+
+
+
+          <section className="highlights">
+            <div className="container2">
+              <div className="section-title">
+                <div className="card_title">More than just fantasy</div>
+              </div>
+              <div className="more_card">
+                <div class="heightlight_card" >
+                  <div className="withdraw_card">
+                    <img
+                      src={Images}
+                      className="withdrawal_img"
+                      alt="Instant Withdrawal"
+                    />
+                  </div>
+                  <div className="card_label">
+                    <h4>Instant Withdrawal</h4>
+                  </div>
+                  <div className="card_label">
+
+                    <p>
+                      Join in various types of leagues and increase your
+                      probability to win.
+                  </p>
+                  </div>
+                </div>
+
+                <div class="heightlight_card" >
+                  <div className="withdraw_card">
+                    <img
+                      src={Images}
+                      className="withdrawal_img"
+                      alt="Instant Withdrawal"
+                    />
+                  </div>
+                  <div className="card_label">
+                    <h4>More league types</h4>
+
+                  </div>
+                  <div className="card_label">
+
+                    <p>
+                      Win real money and withdraw your winnings to your bank
+                      instantly.
+                  </p>
+                  </div>
+                </div>
+                <div class="heightlight_card" >
+                  <div className="withdraw_card">
+                    <img
+                      src={Images}
+                      className="withdrawal_img"
+                      alt="Instant Withdrawal"
+                    />
+                  </div>
+                  <div className="card_label">
+                    <h4>Pick squad after toss</h4>
+                  </div>
+                  <div className="card_label">
+                    <p>
+                      You can pick your best squad even after the toss before
+                      match starts.
+                  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="fantasy-players_img">
+            <div className="container2">
+              <div className="section-title">
+                <h3>Fantasy Players ❤️ LeagueX</h3>
+              </div>
+              <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: 60, paddingBottom: 80 }}>
+                <div className="fantasy_player">
+                  <div
+                    className="player_image"
+                    style={{
+                      backgroundImage: "url(" + "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" + ")",
+                      backgroundPosition: 'center',
+                      backgroundSize: 'cover',
+                      backgroundRepeat: 'no-repeat',
+                      height: 100,
+                      width: 100,
+                      borderRadius: 100,
+                      marginTop: -80
+
+                    }}
+                  />
+                  <h4 className="player_name">MATHI</h4>
+                  <div style={{ margin: 24, lineHeight: 1.2, textAlign: "center" }}>
+
+                    <p>
+                      I have been playing fantasy sports from long time And I
+                      think LeagueX is the best one that I’ve Played with all
+                      the unique features.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="fantasy_player">
+                  <div
+                    className="player_image"
+                    style={{
+                      backgroundImage: "url(" + "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" + ")",
+                      backgroundPosition: 'center',
+                      backgroundSize: 'cover',
+                      backgroundRepeat: 'no-repeat',
+                      height: 100,
+                      width: 100,
+                      borderRadius: 100,
+                      marginTop: -80
+
+                    }}
+                  />
+                  <h4 className="player_name">MATHI</h4>
+                  <div style={{ margin: 24, lineHeight: 1.2, textAlign: "center" }}>
+
+                    <p>
+                      I have been playing fantasy sports from long time And I
+                      think LeagueX is the best one that I’ve Played with all
+                      the unique features.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="fantasy_player">
+                  <div
+                    className="player_image"
+                    style={{
+                      backgroundImage: "url(" + "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" + ")",
+                      backgroundPosition: 'center',
+                      backgroundSize: 'cover',
+                      backgroundRepeat: 'no-repeat',
+                      height: 100,
+                      width: 100,
+                      borderRadius: 100,
+                      marginTop: -80
+
+                    }}
+                  />
+                  <h4 className="player_name">MATHI</h4>
+                  <div style={{ margin: 24, lineHeight: 1.2, textAlign: "center" }}>
+                    <p>
+                      I have been playing fantasy sports from long time And I
+                      think LeagueX is the best one that I’ve Played with all
+                      the unique features.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="league_count">
+                <div>
+                  <h2>23768768+</h2>
+                  <p>Total Winners</p>
+                </div>
+
+                <div>
+                  <h2>23768768+</h2>
+                  <p>Total Winnings</p>
+                </div>
+
+                <div>
+                  <h2>23768768+</h2>
+                  <p>Total League count</p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+
+
+          <section className="download-app">
+            <img
+              className="download-app_green-path"
+              src={greenPath}
+              alt=""
+            />
+            <div className="container2">
+              <div className="mobile_">
+                <img
+                  className="mobile1"
+                  alt="Mobile"
+                  src={Mobile1}
+                />
+                <img
+                  className="mobile2"
+                  alt="Mobile"
+                  src={Mobile2}
+                />
+                <div className="download-app_right">
+                  <h2>Download for mobile</h2>
+                  <p>
+                    Experience LeagueX faster and better from anywhere with
+                  <span>our mobile apps.</span>
+                  </p>
+                  <a
+                    className="btn btn-blue"
+                  >
+                    GET THE APP
+                </a>
+                </div>
+              </div>
+
+
+            </div>
+          </section>
+
+          <section className="footer">
+            <div className="footer_top">
+              <div className="container2">
+                <div className="footer_content">
+                  <div className="footer_section">
+                    <div className="footer_title">About the game</div>
+                    <div className="footer_col1">
+                      <ul>
+                        <li>
+                          <a>
+                            How to Play
+                        </a>
+                        </li>
+                        <li>
+                          <a>
+                            Fantasy Points System
+                        </a>
+                        </li>
+                        <li>
+                          <a>
+                            {`FAQ's`}
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+
+                  <div className="footer_section">
+                    <div className="footer_title">About LeagueX</div>
+                    <div className="footer_col1">
+                      <ul>
+                        <li>
+                          <a>
+                            Legeal
+                        </a>
+                        </li>
+                        <li>
+                          <a>
+                            We are secured
+                        </a>
+                        </li>
+                        <li>
+                          <a>
+                            Terms & Conditions
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="footer_section">
+                    <div className="footer_title">Get updates in</div>
+                    <div className="footer_col1">
+                      <ul>
+                        <li>
+                          <a>
+                            Legeal
+                        </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div style={{ display: "flex", justifyContent: "space-between", width: 200, }}>
+                      <img
+                        src={facebook}
+                        alt="Facebook"
+                        className="facebook"
+
+                      />
+
+                      <img
+                        src={instagram}
+                        alt="Instagram"
+                        className="instagram"
+                      />
+                      <img
+                        src={twitter}
+                        alt="twitter"
+                        className="twitter"
+
+                      />
+                      <img
+                        src={youtube}
+                        alt="youtube"
+                        className="youtube"
+
+                      />
+                    </div>
+                    <div style={{ marginTop: 4 }}>
+                      <img
+                        src={cashfree}
+                        alt="Cashfree"
+                      />
+                    </div>
+                    {/*                         
+                        <li className="soical_media-icon">
+                          <div style={{ display: "flex", justifyContent: "space-between", paddingRight: 20, flexDirection: "row" }}>
+
+                            <img
+                              src={facebook}
+                              alt="Facebook"
+                            />
+
+                            <img
+                              src={instagram}
+                              alt="Instagram"
+                            />
+                            <img
+                              src={twitter}
+                              alt="twitter"
+                            />
+                            <img
+                              src={youtube}
+                              alt="youtube"
+                            />
+                          </div>
+
+                        </li>
+                        <li>
+                          <img
+                            src={cashfree}
+                            alt="Cashfree"
+                          />
+                        </li>
+                      </ul>
+                    </div> */}
+                  </div>
+
+
+                  <div className="footer_section_col4">
+                    <div className="footer_title">For more queries</div>
+                    <div className="footer_col4">
+                      <a
+                        className="btn btn-outline"
+                      >
+                        CONTACT
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div className="footer_bottom">
+              <div className="container2">
+                <div className="footer_not-affiliated">
+                  <p>
+                    {`LeagueX is not affiliated in any way to and claims no
+                  association, in any capacity whatsoever, with the (i)
+                  International Cricket Council ("ICC") or any national cricket
+                  board or team, (ii) Board of Control for Cricket in India
+                  ("BCCI"), the Indian Premier League ("IPL") or any IPL
+                  franchises, or (iii) any other domestic cricket
+                  tournament/league, or tournament franchise/team (other than
+                  where specifically stated). LeagueX acknowledges that the ICC,
+                  BCCI/IPL and its franchises, respective national cricket
+                  boards, domestic tournament organisers and franchises/teams,
+                  respectively, own all proprietary names and marks relating to
+                  the relevant tournament or competition.`}
+                  </p>
+                  <p className="footer_notplay">
+                    Residents of the states of Assam, Odisha and Telangana, and
+                    where otherwise prohibited by law are not eligible to enter
+                    LeagueX’s pay-to-play leagues.
+                </p>
+                </div>
+                <div className="footer_copyright">
+                  Copyright &copy; LeagueX. All rights reserved.
+              </div>
+              </div>
+            </div>
+          </section>
         </div>
-
-
       </div>
     );
   }
