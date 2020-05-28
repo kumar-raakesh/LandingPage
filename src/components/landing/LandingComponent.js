@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 // import "./../../css/landing.css";
 import "../css/style.css";
-import img from "../images/landing/header/leaguex_logo.png";
+import leaguexLogo from "../images/landing/header/leaguex_logo.png";
 import mobile from "../images/landing/banner/leaguex_mobile.png";
 import Images from "../images/landing/highlights/instant_withdraw.png";
 import Mobile1 from "../images/landing/downloadapp/matches_mobile.png";
@@ -130,109 +130,108 @@ export default class LandingComponent extends Component {
     };
 
     return (
-      <div className="main_container" >
-        <div className="sub_container">
-          <div style={{ height: 80, width: "100%", }}>
-            <div
-              className={
-                this.state.scrollPosition > 40 ? "header sticky" : "header"
-              }
-            >
-              <div className="header_inner">
-                <div className="header_left">
-                  <a href="https://www.leaguex.com/">
-                    <img
-                      src={img}
-                      alt="Leaguex Logo"
-                    />
+      <div>
+        <div
+          className={
+            this.state.scrollPosition > 40 ? "header sticky" : "header"
+          }
+        >
+          <div className="header_inner content">
+            <div className="header_left">
+              <a href="https://www.leaguex.com/">
+                <img
+                  src={leaguexLogo}
+                  alt="Leaguex Logo"
+                />
+              </a>
+            </div>
+            <div className="header_right">
+              <ul>
+                <li className="header_points">
+                  <a
+                  >
+                    Points System
                   </a>
-                </div>
-                <div className="header_right">
-                  <ul>
-                    <li className="header_points">
-                      <a
-                        onClick={() => {
-                          alert("Working")
-                        }
-                        }
-                      >
-                        Points System
+                </li>
+                <li className="header_contact">
+                  <a
+                  >
+                    Contact Us
                   </a>
-                    </li>
-                    <li className="header_contact">
-                      <a
-                        onClick={() => {
-                          alert("Working")
-                        }
-                        }
-                      >
-                        Contact Us
+                </li>
+                <li>
+                  <a
+                    className="btn-download"
+                  >
+                    Download App
                   </a>
-                    </li>
-                    <li>
-                      <a
-                        className="btn-download"
-                        onClick={() => {
-                          alert("Working")
-                        }
-                        }
-                      >
-                        Download App
-                  </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <section className="banner">
-            <div className="container2">
-              <div className="banner_info d-flex">
-                <div className="banner_content">
-                  <h1>
-                    Play the Ultimate <span>Fantasy Sports</span>
-                  </h1>
-                  <div className="banner_tagline">
-                    Show off your sports knowledge by picking squads{" "}
-                    <span>and win real money daily.</span>
-                  </div>
-                  <div className="banner_button">
-                    <a
-                      onClick={() => {
-                        alert("LOgin");
-                      }
-
-                      }
-                      className="btn btn-black"
-                    >
-                      LOGIN
-                  </a>
-                    <a
-                      onClick={() => {
-                        alert("SignUp")
-                      }}
-                      className="btn btn-blue"
-                    >
-                      SIGNUP NOW & GET ₹100*
-                  </a>
-                  </div>
-                </div>
-                <div className="banner_mobile">
-                  <img
-                    src={mobile}
-                    className="banner_mobile_img"
-                  />
-
-                </div>
+        </div>
+        <section className="banner">
+          <div className="content banner_fantasy">
+            <div className="banner_content" >
+              <h1>
+                Play the Ultimate <span>Fantasy Sports</span>
+              </h1>
+              <div className="banner_tagline">
+                Show off your sports knowledge by picking squads{" "}
+                <span>and win real money daily.</span>
               </div>
             </div>
+            <div className="banner_button">
+              <a className="btn btn-black">
+                LOGIN
+              </a>
+              <a className="btn btn-blue">
+                SIGNUP NOW & GET ₹100*
+              </a>
+            </div>
 
-          </section>
+            <div className="banner_mobile">
+              <img
+                src={mobile}
+                className="banner_mobile_img"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="download-app">
+          <div className="download-app_container">
+            <div className="download_left">
+              <img
+                className="mobile1"
+                alt="Mobile"
+                src={Mobile1}
+              />
+              <img
+                className="mobile2"
+                alt="Mobile"
+                src={Mobile2}
+              />
+            </div>
+            <div className="download-app_right">
+              <h2>Download for mobile</h2>
+              <p>
+                Experience LeagueX faster and better from anywhere with
+                <span className="our_mobile">our mobile apps.</span>
+              </p>
+              <a
+                className="btn btn-blue"
+              >
+                GET THE APP
+                </a>
+            </div>
+          </div>
+        </section>
 
 
 
 
-          <section className="upcoming-matches">
+        {/* <section className="upcoming-matches">
             <div className="container2">
               <div className="section-title">
                 <div className="popular_matches_bar" />
@@ -265,21 +264,21 @@ export default class LandingComponent extends Component {
               </div>
 
             </div>
-          </section>
+          </section> */}
 
 
-          <section className="easy-play">
+        {/* <section className="easy-play">
             <div className="container2">
               <div className="section-title">
                 <h3 >Easy to play</h3>
               </div>
             </div>
 
-          </section>
+          </section> */}
 
 
 
-          <section className="highlights">
+        {/* <section className="highlights">
             <div className="container2">
               <div className="section-title">
                 <div className="card_title">More than just fantasy</div>
@@ -345,8 +344,8 @@ export default class LandingComponent extends Component {
                 </div>
               </div>
             </div>
-          </section>
-          <section className="fantasy-players_img">
+          </section> */}
+        {/* <section className="fantasy-players_img">
             <div className="container2">
               <div className="section-title">
                 <h3>Fantasy Players ❤️ LeagueX</h3>
@@ -447,11 +446,11 @@ export default class LandingComponent extends Component {
               </div>
 
             </div>
-          </section>
+          </section> */}
 
 
 
-          <section className="download-app">
+        {/* <section className="download-app">
             <img
               className="download-app_green-path"
               src={greenPath}
@@ -485,159 +484,120 @@ export default class LandingComponent extends Component {
 
 
             </div>
-          </section>
+          </section> */}
 
-          <section className="footer">
-            <div className="footer_top">
-              <div className="container2">
-                <div className="footer_content">
-                  <div className="footer_section">
-                    <div className="footer_title">About the game</div>
-                    <div className="footer_col1">
-                      <ul>
-                        <li>
-                          <a>
-                            How to Play
+        <section className="footer">
+          <div className="footer_top">
+            <div className="content">
+              <div className="footer_content">
+                <div className="footer_section">
+                  <div className="footer_title">About the game</div>
+                  <div className="footer_col1">
+                    <ul>
+                      <li>
+                        <a>
+                          How to Play
                         </a>
-                        </li>
-                        <li>
-                          <a>
-                            Fantasy Points System
+                      </li>
+                      <li>
+                        <a>
+                          Fantasy Points System
                         </a>
-                        </li>
-                        <li>
-                          <a>
-                            {`FAQ's`}
+                      </li>
+                      <li>
+                        <a>
+                          {`FAQ's`}
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="footer_section">
+                  <div className="footer_title">About LeagueX</div>
+                  <div className="footer_col1">
+                    <ul>
+                      <li>
+                        <a>
+                          Legeal
+                        </a>
+                      </li>
+                      <li>
+                        <a>
+                          We are secured
+                        </a>
+                      </li>
+                      <li>
+                        <a>
+                          Terms & Conditions
                           </a>
-                        </li>
-                      </ul>
-                    </div>
+                      </li>
+                    </ul>
                   </div>
+                </div>
 
-
-
-                  <div className="footer_section">
-                    <div className="footer_title">About LeagueX</div>
-                    <div className="footer_col1">
-                      <ul>
-                        <li>
-                          <a>
-                            Legeal
+                <div className="footer_section">
+                  <div className="footer_title">Get updates in</div>
+                  <div className="footer_col1">
+                    <ul>
+                      <li>
+                        <a>
+                          We are secured
                         </a>
-                        </li>
-                        <li>
-                          <a>
-                            We are secured
-                        </a>
-                        </li>
-                        <li>
-                          <a>
-                            Terms & Conditions
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                      </li>
+                    </ul>
                   </div>
+                  <div style={{ display: "flex", justifyContent: "space-between", width: 200, }}>
+                    <img
+                      src={facebook}
+                      alt="Facebook"
+                      className="facebook"
+                    />
+                    <img
+                      src={instagram}
+                      alt="Instagram"
+                      className="instagram"
+                    />
+                    <img
+                      src={twitter}
+                      alt="twitter"
+                      className="twitter"
 
-                  <div className="footer_section">
-                    <div className="footer_title">Get updates in</div>
-                    <div className="footer_col1">
-                      <ul>
-                        <li>
-                          <a>
-                            Legeal
-                        </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div style={{ display: "flex", justifyContent: "space-between", width: 200, }}>
-                      <img
-                        src={facebook}
-                        alt="Facebook"
-                        className="facebook"
+                    />
+                    <img
+                      src={youtube}
+                      alt="youtube"
+                      className="youtube"
 
-                      />
-
-                      <img
-                        src={instagram}
-                        alt="Instagram"
-                        className="instagram"
-                      />
-                      <img
-                        src={twitter}
-                        alt="twitter"
-                        className="twitter"
-
-                      />
-                      <img
-                        src={youtube}
-                        alt="youtube"
-                        className="youtube"
-
-                      />
-                    </div>
-                    <div style={{ marginTop: 4 }}>
-                      <img
-                        src={cashfree}
-                        alt="Cashfree"
-                      />
-                    </div>
-                    {/*                         
-                        <li className="soical_media-icon">
-                          <div style={{ display: "flex", justifyContent: "space-between", paddingRight: 20, flexDirection: "row" }}>
-
-                            <img
-                              src={facebook}
-                              alt="Facebook"
-                            />
-
-                            <img
-                              src={instagram}
-                              alt="Instagram"
-                            />
-                            <img
-                              src={twitter}
-                              alt="twitter"
-                            />
-                            <img
-                              src={youtube}
-                              alt="youtube"
-                            />
-                          </div>
-
-                        </li>
-                        <li>
-                          <img
-                            src={cashfree}
-                            alt="Cashfree"
-                          />
-                        </li>
-                      </ul>
-                    </div> */}
+                    />
                   </div>
-
-
-                  <div className="footer_section_col4">
-                    <div className="footer_title">For more queries</div>
-                    <div className="footer_col4">
-                      <a
-                        className="btn btn-outline"
-                      >
-                        CONTACT
+                  <div style={{ marginTop: 4 }}>
+                    <img
+                      src={cashfree}
+                      alt="Cashfree"
+                    />
+                  </div>
+                </div>
+                <div className="footer_section_col4">
+                  <div className="footer_title">For more queries</div>
+                  <div className="footer_col4">
+                    <a
+                      className="btn btn-outline"
+                    >
+                      CONTACT
                       </a>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <section>
-            <div className="footer_bottom">
-              <div className="container2">
-                <div className="footer_not-affiliated">
-                  <p>
-                    {`LeagueX is not affiliated in any way to and claims no
+        <section>
+          <div className="footer_bottom">
+            <div className="container">
+              <div className="footer_not-affiliated">
+                <p>
+                  {`LeagueX is not affiliated in any way to and claims no
                   association, in any capacity whatsoever, with the (i)
                   International Cricket Council ("ICC") or any national cricket
                   board or team, (ii) Board of Control for Cricket in India
@@ -649,21 +609,25 @@ export default class LandingComponent extends Component {
                   boards, domestic tournament organisers and franchises/teams,
                   respectively, own all proprietary names and marks relating to
                   the relevant tournament or competition.`}
-                  </p>
-                  <p className="footer_notplay">
-                    Residents of the states of Assam, Odisha and Telangana, and
-                    where otherwise prohibited by law are not eligible to enter
-                    LeagueX’s pay-to-play leagues.
                 </p>
-                </div>
-                <div className="footer_copyright">
-                  Copyright &copy; LeagueX. All rights reserved.
+                <p className="footer_notplay">
+                  Residents of the states of Assam, Odisha and Telangana, and
+                  where otherwise prohibited by law are not eligible to enter
+                  LeagueX’s pay-to-play leagues.
+                </p>
               </div>
+              <div className="footer_copyright">
+                Copyright &copy; LeagueX. All rights reserved.
               </div>
             </div>
-          </section>
+          </div>
+        </section>
+        <div className="bottom_banner" >
+          <a style={{ padding: 20, textAlign: "center", fontSize: 14 }}>
+            SIGNUP NOW & GET ₹100*
+          </a>
         </div>
-      </div>
+      </div >
     );
   }
 }
