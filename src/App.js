@@ -1,12 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
-import LandingPage from "./components/landing/LandingComponent"
+// import './App.css';
+import LandingPage from "./components/landing/LandingComponent";
+import Dashboard from "./components/dashboard/Dashboard";
 
 function App() {
   return (
     <div >
-      <LandingPage />
+      {/* <LandingPage /> */}
+      <Dashboard />
     </div>
   );
 }

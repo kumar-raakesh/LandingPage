@@ -1,0 +1,143 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  max-width: unset !important;
+}
+body {
+  font-family: Barlow_regular;
+  font-size: 12px;
+  color: #fff;
+  background-color: whitesmoke;
+  letter-spacing: 0.6px;
+}
+/* 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  height: 100px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} */
+.container{
+  display: flex;
+  width: 100%;
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+
+}
+.content{
+  width: 70%;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+  padding: 8px;
+  /* justify-content: center; */
+}
+.card_content{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+._card{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 44%;
+  padding: 16px 16px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* background-color: wheat; */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+._card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.profile{
+  display: flex;
+  flex-direction: row;
+}
+.profile_img{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: powderblue;
+}
+.man_of_the_match{
+  display: flex;
+  font-size: 12px;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+}
+.man_of_the_match p{
+  font-size: 14px;
+  margin-left: 8px;
+  padding: 2px;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card_heading , .match_place{
+  font-size: 14px;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.match_card{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.match_status{
+display: flex;
+height: 20px;
+width: 96%;
+border-radius: 6px;
+justify-content: center;
+align-items: center;
+padding: 4px ;
+background-color:pink;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+.match_status p{
+  text-align: center;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.style-two {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  border: 0;
+  height: 1px;
+  width: 90%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+
+@media (max-width: 575.98px) {
+  .container{
+    width: 100%;
+  
+  }
+  .content{
+    width: 96%;
+  }
+  ._card{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .card_content{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+}
